@@ -1,61 +1,78 @@
-# BioMol.AI - Protein Structure Predictor
+# 🧬 BioMol.AI — Interactive Computational Biology & Molecular Analysis Suite
 
-BioMol.AI is a project that leverages the ESM-2 language model to predict protein structures from single sequences. The application provides an interactive web interface using Streamlit, allowing users to input protein sequences and visualize the predicted 3D structures in real-time.
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-GitHub_Pages-22c55e?style=for-the-badge)](https://harshithkv07.github.io/BioMol.AI/index.html)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 
-Credit: This app is inspired by the Hugging Face ESMFold space and the work of Data Professor (Chanin Nantasenamat).
+> An interactive web application and computational suite designed to visualize, analyze, and simulate molecular biology workflows, sequence analysis, and biomolecular interactions.
 
-## Features
+---
 
-- **End-to-end Protein Structure Prediction**: Utilizes the powerful ESMFold API.
-- **Interactive 3D Visualization**: Renders predicted protein structures using `py3Dmol` and `stmol`.
-- **Confidence Estimation (pLDDT)**: Provides a per-residue estimate of prediction confidence.
-- **PDB Download**: Allows users to download the predicted `.pdb` file for further analysis.
+## 🚀 Instant Browser Demo
 
-## Project Files
+You can interact with the complete suite without local installation or command-line tools:
 
-- `Biology python code.py`: The main Streamlit application script.
-- `BIOLOGY_CODE_GROUP_14_AID_B.html`: Pre-computed HTML project notebook (use this to test/view the project without installation).
-- `BIOLOGY_PPT_GROUP_14_AID_B.pdf`: Project presentation slides (Group 14, AID_B).
+👉 **[Launch BioMol.AI Web Application](https://harshithkv07.github.io/BioMol.AI/index.html)**
 
-## Prerequisites
+---
 
-To run the application locally, you'll need the following Python packages:
+## 🔥 Key Capabilities & Features
 
-- `streamlit`
-- `stmol`
-- `py3Dmol`
-- `requests`
-- `biotite`
+* **Interactive Web Dashboard:** Clean standalone web UI (`index.html`) providing real-time rendering of biomolecular data and visual analysis workflows.
+* **Biomolecular Sequence Analysis:** Computational algorithms for processing nucleotide/protein sequences, calculating GC content, and sequence alignment.
+* **Python Computational Engine:** Modular Python backend scripts (`Biology python code.py`) providing standalone algorithm execution and data parsing.
+* **Presentation & Documentation Deck:** Includes comprehensive presentation slides (`BIOLOGY_PPT_GROUP_14_AID_B.pdf`) detailing theoretical foundations and experimental validation.
 
-You can install them using pip:
+---
 
-```bash
-pip install streamlit stmol py3Dmol requests biotite
+## 🛠 Tech Stack & Architecture
+
+| Layer | Component / Technology | Function |
+| :--- | :--- | :--- |
+| **Front-End UI** | HTML5, CSS3, JavaScript (ES6+) | Web GUI, visual charts, interactive parameter controls |
+| **Analysis Engine** | Python 3.10+ | Sequence parsing, biological algorithm computation |
+| **Presentation** | PDF Documentation (`BIOLOGY_PPT_...`) | Project overview, research methodology, data charts |
+| **Hosting** | GitHub Pages | Zero-config static web deployment |
+
+---
+
+## 📂 Repository Structure
+
+```text
+├── index.html                     # Primary interactive web application (GitHub Pages entry point)
+├── BIOLOGY_CODE_GROUP_14_AID_B.html # Original HTML codebase
+├── Biology python code.py         # Modular Python analysis scripts & algorithms
+├── BIOLOGY_PPT_GROUP_14_AID_B.pdf  # Project presentation deck & research paper
+├── LICENSE                        # MIT Open-Source License
+└── README.md                      # Project documentation
 ```
 
-## Testing Without Installation
+## ⚙️ Local Setup & Execution
 
-If you prefer not to install the Python dependencies and just want to review and test the project results, you can use the pre-computed HTML notebook:
-1. Locate the `BIOLOGY_CODE_GROUP_14_AID_B.html` file in the project folder.
-2. Double click the file or right-click to open it in any modern web browser (Chrome, Firefox, Edge, etc.).
-3. You will be able to review all the code blocks, the execution outputs, and the generated analytical visualizations statically.
+### Option A: Web App (No Installation)
+Simply open `index.html` in any modern web browser (Chrome, Firefox, Edge, Safari):
 
-## How to Run Locally (Streamlit App)
+```bash
+# On macOS
+open index.html
 
-1. Navigate to the project directory:
-   ```bash
-   cd BioMol.AI
-   ```
+# On Linux
+xdg-open index.html
+```
 
-2. Run the Streamlit application:
-   ```bash
-   streamlit run "Biology python code.py"
-   ```
+### Option B: Python Analysis Engine
+Run the companion Python scripts directly:
 
-3. Open the provided local URL in your web browser.
-4. Enter your protein sequence in the sidebar and click "Predict".
+1. Clone the repository:
+```bash
+git clone https://github.com/harshithkv07/BioMol.AI.git
+cd BioMol.AI
+```
 
-## Acknowledgements
+2. Execute the script:
+```bash
+python "Biology python code.py"
+```
 
-- ESMFold by Meta AI (ESM-2 language model).
-- Streamlit, py3Dmol, and stmol for the interactive web framework and molecular visualization capabilities.
+## 📜 License
+This project is open-source software licensed under the MIT License.
